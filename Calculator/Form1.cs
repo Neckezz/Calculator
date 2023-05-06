@@ -19,21 +19,41 @@ namespace Calculator
         {
             InitializeComponent();
         }
-        private void jednako(object sender, EventArgs e)
+        private void equals()
         {
             secondNumber = Convert.ToDouble(label1.Text);
-            if (label4.Text == "+")
-                result = firstNumber + secondNumber;
-            else if (label4.Text == "-")
-                result = firstNumber - secondNumber;
-            else if (label4.Text == "*")
-                result = firstNumber * secondNumber;
-            else if (label4.Text == "/")
-                result = firstNumber / secondNumber;
-            else if(label4.Text=="%")
-                result = firstNumber % secondNumber;
-            
+            switch (label4.Text)
+            {
+                    case "+":
+                    result = firstNumber + secondNumber;
+                    break;
+                    case "-":
+                    result = firstNumber - secondNumber;
+                    break;
+                    case "*":
+                    result = firstNumber * secondNumber;
+                    break;
+                    case "/":
+                    result = firstNumber / secondNumber;
+                    break;
+                    case "%":
+                    result = firstNumber % secondNumber;
+                    break;
+                    case "x2":
+                    result = firstNumber * secondNumber;
+                    break;
+                    default:
+                    label1.Text = "Error";
+                    break;
+
+
+            }
+
             label1.Text = Convert.ToString(result);
+        }
+        private void jednako(object sender, EventArgs e)
+        {
+            equals();
         }
 
         private void sabiranje(object sender, EventArgs e)
@@ -67,7 +87,12 @@ namespace Calculator
         {
             firstNumber = Convert.ToDouble(label1.Text);
             label1.Text = "0";
-            label2.Text = "%";
+            label4.Text = "%";
+        }
+        private void kvadrat(object sender, EventArgs e)
+        {
+            firstNumber = Convert.ToDouble(label1.Text);
+            label4.Text = "x2";
         }
 
         private void one(object sender, EventArgs e)
@@ -80,6 +105,7 @@ namespace Calculator
             {
                 label1.Text = label1.Text + "1";
             }
+     
 
         }
 
@@ -105,6 +131,7 @@ namespace Calculator
             {
                 label1.Text = label1.Text + "3";
             }
+                
         }
 
         private void four(object sender, EventArgs e)
@@ -177,6 +204,20 @@ namespace Calculator
             {
                 label1.Text = label1.Text + "9";
             }
+        }
+
+        private void tacka(object sender, EventArgs e)
+        {
+            label1.Text += ",";
+        }
+
+        private void znak(object sender, EventArgs e)
+        {
+            double check = Convert.ToDouble(label1.Text);
+            if (check > 0)
+                label1.Text = "-" + label1.Text;
+            else
+                label1.Text = "+" + label1.Text;
         }
 
         private void nula(object sender, EventArgs e)

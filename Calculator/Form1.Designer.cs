@@ -52,8 +52,6 @@ namespace Calculator
             this.button20 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,9 +61,8 @@ namespace Calculator
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(210, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 42);
+            this.label1.Size = new System.Drawing.Size(0, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "0";
             // 
             // button1
             // 
@@ -197,6 +194,7 @@ namespace Calculator
             this.button12.TabIndex = 12;
             this.button12.Text = "x2";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.kvadrat);
             // 
             // button13
             // 
@@ -218,6 +216,7 @@ namespace Calculator
             this.button14.TabIndex = 14;
             this.button14.Text = "+/-";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.znak);
             // 
             // button15
             // 
@@ -226,8 +225,9 @@ namespace Calculator
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(63, 56);
             this.button15.TabIndex = 15;
-            this.button15.Text = ",";
+            this.button15.Text = ".";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.tacka);
             // 
             // button16
             // 
@@ -290,8 +290,6 @@ namespace Calculator
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(30, 0);
             this.panel1.Name = "panel1";
@@ -306,24 +304,6 @@ namespace Calculator
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 31);
             this.label4.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(169, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 20);
-            this.label3.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 37);
-            this.label2.TabIndex = 1;
             // 
             // Form1
             // 
@@ -383,8 +363,6 @@ namespace Calculator
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }
 }
