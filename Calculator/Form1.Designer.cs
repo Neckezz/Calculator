@@ -51,9 +51,9 @@ namespace Calculator
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@ namespace Calculator
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(234, 28);
+            this.label1.Location = new System.Drawing.Point(210, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 42);
             this.label1.TabIndex = 0;
@@ -298,6 +298,15 @@ namespace Calculator
             this.panel1.Size = new System.Drawing.Size(304, 100);
             this.panel1.TabIndex = 20;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 31);
+            this.label4.TabIndex = 3;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -315,16 +324,6 @@ namespace Calculator
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 37);
             this.label2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 31);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "+";
             // 
             // Form1
             // 

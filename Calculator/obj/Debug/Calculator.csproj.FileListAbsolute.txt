@@ -18,3 +18,4 @@ C:\Users\Nemanja Ciric\Source\Repos\Neckezz\Calculator\Calculator\obj\Debug\Calc
 C:\Users\Nemanja Ciric\Source\Repos\Neckezz\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\Nemanja Ciric\Source\Repos\Neckezz\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\Nemanja Ciric\Source\Repos\Neckezz\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Nemanja Ciric\Source\Repos\Neckezz\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
